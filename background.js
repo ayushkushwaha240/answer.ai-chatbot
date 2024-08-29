@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         (async () => {
             try {
                 console.log("Data: " + message.data.query);
-                const response = await fetch("https://ayushkush2402-answer-ai.hf.space/ask/", {
+                const response = await fetch("https://ayushkush2402-inferenceanswer-ai.hf.space/ask", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
